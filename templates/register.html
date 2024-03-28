@@ -1,0 +1,117 @@
+{% include "homepage.html" %}
+{% block content %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .navbar{
+      position: absolute;
+      top: 0;
+      width: 100%;
+      height: 60px; /* Adjust this to change the size of the navbar */
+  }
+  
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #d0d176;
+  background-size: cover;
+  padding: 50px;
+
+}
+
+form {
+  background-color: #ffffff;
+  border-radius: 40px;
+  padding: 40px;
+  width: 500px;
+  margin: 0 auto;
+  font-weight: bold;
+}
+
+h2 {
+  margin-top: 1.5cm;
+  font-style: italic;
+  font-weight: bolder;
+  text-align: center;
+  color: white;
+}
+
+label {
+  color: #464646;
+  text-transform: uppercase;
+}
+
+  button {
+width: 100%;
+background-color: #4ca3af;
+color: white;
+border: none;
+padding: 15px;
+text-transform: uppercase;
+border-radius: 30px;
+cursor: pointer;
+/* Add your new styles below */
+font-size: 20px; /* Change the font size */
+font-weight: bold; /* Make the text bold */
+transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+/* Change the background color when you hover over the button */
+button:hover {
+background-color: #3b6d94;
+}
+
+
+
+
+input[type="text"], input[type="email"], input[type="password"] {
+  width: 100%;
+  border: none;
+  border-bottom: 2px solid #0d6cc5;
+  margin-bottom: 20px;
+  padding: 10px;
+}
+input[type="date"] {
+  width: 100%;
+  border: none;
+  border-bottom: 2px solid #c5510d;
+  margin-bottom: 20px;
+  padding: 10px;
+  background-color: #e9f1f7; 
+
+}
+
+input[type="submit"] {
+  width: 100%;
+  background-color: #4c77af;
+  color: white;
+  border: none;
+  padding: 15px;
+  text-transform: uppercase;
+  border-radius: 30px;
+  cursor: pointer;
+}
+</style>
+<body>
+    <form method="POST" action="">
+        <label for="">Username</label>
+        <input name="username" type="text">
+        <label for="">Mobile</label>
+        <input name="mobile" type="text">
+        <label for="">Address</label>
+        <input name="address" type="text">
+        <label for="">Email</label>
+        <input name="email" type="text">
+        <label for="">Password</label>
+        <input name="password" type="text">
+        <button>submit</button>
+    </form>
+</body>
+</html>
+{% endblock %}
